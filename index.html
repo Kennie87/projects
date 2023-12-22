@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Let's Get Hired!</title>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <header>
+            <img class="logo" src="./img/rocket.png" alt="" id="moon">
+            <h2 id="logo_text">Remote RocketShip / Tech JobBoard</h2>
+        </header>
+
+        <section class="parallax">
+            <img src="./img/mountainAndHouse.png" alt="" id="house">
+            <img src="./img/rightM.png" alt="" id="right">
+            <img src="./img/leftM.png" alt="" id="left">
+            <img src="./img/rightM.png" alt="" id="right1">
+            <img src="./img/leftM.png" alt="" id="left1">
+            <img src="./img/rightM.png" alt="" id="right2">
+            <img src="./img/leftM.png" alt="" id="left2">
+            <img src="./img/telescope.png" alt="" id="telescope">
+            <img src="./img/alien.png" alt="" id="alien">
+            <img src="./img/rightT.png" alt="" id="rightT">
+            <img src="./img/leftT.png" alt="" id="leftT">
+            <img src="./img/rightT.png" alt="" id="rightT1">
+            <img src="./img/leftT.png" alt="" id="leftT1">
+            <img src="./img/cloud.png" alt="" id="c1">
+            <img src="./img/cloud.png" alt="" id="c2">
+            <img src="./img/cloud.png" alt="" id="c3">
+            <img src="./img/cloud.png" alt="" id="c4">
+        </section>
+        <section class="sec_mStatment">
+            <p>
+                "Empowering Tech Talent, Connecting Futures: Our mission is to serve as the 
+                premier online platform for tech and software development careers, fostering a 
+                dynamic ecosystem where innovation thrives. We are dedicated to connecting ambitious 
+                professionals with cutting-edge opportunities, facilitating the exchange of talent and 
+                expertise that drives the digital evolution. Through curated job postings, personalized 
+                career resources, and a vibrant community, we aspire to be the catalyst for transformative 
+                career journeys in the ever-evolving landscape of technology and software development."
+            </p>
+        </section>
+        <section class="job_listings" id="blur">
+            <h1>Job<br>Listings</h1>
+            <div class="scene" id="scene" onclick="assist()">
+                <img class="fa-rocket" src="./img/rocketIcon.png" alt="">
+                <img class="cloud cloud1" src="./img/cloud.png" alt="">
+                <img class="cloud cloud2" src="./img/cloud.png" alt="">
+                <img class="cloud cloud3" src="./img/cloud.png" alt="">
+            </div>
+            <div class="modal_assist_container">
+                <dialog class="modal_assist" id="modal_assist">
+                    <h2 style="text-align: center;">Thanks for using Remote RocketShip / JobBoard</h2>
+                    <br>
+                    <p id="question"></p>
+                    <br>
+                    <p id="assist_of_gpt">Processing please wait...</p>
+                    <button class="close_modal_assist" id="modal_assist_button" onclick="modal_assist.close(); resetModalAssist();">Close</button>
+                </dialog>
+            </div>
+            <ul class="jobs"></ul>
+            <div class="modal_container">
+                <dialog class="modal" id="modal">
+                    <h2 style="text-align: center;">Thanks for using Remote RocketShip / JobBoard</h2>
+                    <br>
+                    <p id="result_of_gpt">Processing please wait...</p>
+                    <button class="btn" id="modal_copyToC_button" onclick="copyToClip()">Copy to ClipBoard</button>
+                    <button class="close_modal" id="modal_close_buttons" onclick="modal.close(); resetModal();">Close</button>
+                </dialog>
+            </div>
+        </section>
+        <script src="frontend.js"></script>
+        <footer>Created by Kennie ⚡ by Remote RocketShip &#169 </footer>
+    </body>
+</html>

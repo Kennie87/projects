@@ -6,7 +6,7 @@ function callModalResponse(value){
     });
 }
 function coverLetter(value){
-    const token = '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';
+    const token = 'sk-ZNr2YkVsloDnF9IpCse*********6gVI05tnN5Ox';
     const gptEl = document.getElementById('result_of_gpt');
 
     fetch('https://api.openai.com/v1/chat/completions', {
